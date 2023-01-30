@@ -1,0 +1,20 @@
+---
+title: "My First Post"
+date: 2023-01-30T11:19:01+08:00
+categories:
+#- category  
+- k8s
+#- subcategory  
+- controller
+- crd
+tags:
+- k8s
+- 云计算
+keywords:
+- tech
+- 云计算
+---
+
+this is my first blog, welcome to my home!
+
+<!--more-->

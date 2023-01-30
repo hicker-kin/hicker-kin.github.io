@@ -1,0 +1,21 @@
+---
+#title: "Init"
+date: 2023-01-30T16:27:08+08:00
+lastmod: 2023-01-30
+draft: true
+
+title: "我的第一篇博客"                         
+author: "我是作者"  
+description : "这是描述信息"    
+
+tags : [                                    
+"我的博客标签",
+]
+categories : [                              
+"我的博客分类",
+]
+keywords : [                                
+"我的博客关键字",
+]
+---
+
