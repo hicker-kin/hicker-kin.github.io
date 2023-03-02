@@ -17,6 +17,18 @@
     </item>
     
     <item>
+      <title>Go Http Proxy</title>
+      <link>https://hicker-kin.github.io/post/http-proxy/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hicker-kin.github.io/post/http-proxy/</guid>
+      <description>本文是使用httputils库做的反向代理，代码实现如下:
+用法:
+1、本地运行main 2、访问http://127.0.0.1:8080即可打开百度
+package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;net/http/httputil&amp;#34; &amp;#34;net/url&amp;#34; ) func ReverseProxyHandler(w http.ResponseWriter, r *http.Request) { fmt.Println(&amp;#34;receive a request from:&amp;#34;, r.RemoteAddr, r.Header) remote, err := url.Parse(&amp;#34;https://www.baidu.com&amp;#34;) if err != nil { panic(err) } reverseProxy := httputil.NewSingleHostReverseProxy(remote) director := func(req *http.Request) { req.URL.Scheme = remote.Scheme req.URL.Host = remote.Host req.Host = remote.Host } reverseProxy.Director = director reverseProxy.ServeHTTP(w, r) } func main() { fmt.Printf(&amp;#34;Starting server at port 8080\n&amp;#34;) if err := http.</description>
+    </item>
+    
+    <item>
       <title>Welcome to my blog</title>
       <link>https://hicker-kin.github.io/post/welcome/</link>
       <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>

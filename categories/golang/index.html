@@ -272,6 +272,73 @@
 </article>
 
             
+              
+  
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-left">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
+        <a class="link-unstyled" href="https://hicker-kin.github.io/post/http-proxy/" aria-label="Open the post: Go Http Proxy">
+      
+          Go Http Proxy
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2023-03-02T00:00:00Z">
+        
+  March 2, 2023
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://hicker-kin.github.io/categories/golang">golang</a>, 
+    
+      <a class="category-link" href="https://hicker-kin.github.io/categories/server-proxy">server proxy</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        本文是使用httputils库做的反向代理，代码实现如下:
+用法:
+1、本地运行main 2、访问http://127.0.0.1:8080即可打开百度
+package main import ( &#34;fmt&#34; &#34;log&#34; &#34;net/http&#34; &#34;net/http/httputil&#34; &#34;net/url&#34; ) func ReverseProxyHandler(w http.ResponseWriter, r *http.Request) { fmt.Println(&#34;receive a request from:&#34;, r.RemoteAddr, r.Header) remote, err := url.Parse(&#34;https://www.baidu.com&#34;) if err != nil { panic(err) } reverseProxy := httputil.NewSingleHostReverseProxy(remote) director := func(req *http.Request) { req.URL.Scheme = remote.Scheme req.URL.Host = remote.Host req.Host = remote.Host } reverseProxy.Director = director reverseProxy.ServeHTTP(w, r) } func main() { fmt.Printf(&#34;Starting server at port 8080\n&#34;) if err := http.
+      
+      <p>
+        
+          <a href="https://hicker-kin.github.io/post/http-proxy/" class="postShorten-excerpt_link link" aria-label="Open the post: Go Http Proxy">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+    <a href="https://hicker-kin.github.io/post/http-proxy/" aria-label="Open the post: Go Http Proxy">
+      <div class="postShorten-thumbnailimg">
+        <img alt="" src="//d1u9biwaxjngwg.cloudfront.net/chinese-test-post/vintage-140.jpg"/>
+      </div>
+    </a>
+  
+</article>
+
+            
             
 
           </section>
