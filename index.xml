@@ -6,7 +6,16 @@
     <description>Recent content on hicker-kin blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hicker-kin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hicker-kin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gin Http Proxy</title>
+      <link>https://hicker-kin.github.io/post/gin-proxy/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hicker-kin.github.io/post/gin-proxy/</guid>
+      <description>&lt;p&gt;本文是使用httputils库做的反向代理，代码实现如下：&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Welcome to my blog</title>
       <link>https://hicker-kin.github.io/post/welcome/</link>

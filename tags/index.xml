@@ -6,7 +6,16 @@
     <description>Recent content in Tags on hicker-kin blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hicker-kin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hicker-kin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>golang proxy</title>
+      <link>https://hicker-kin.github.io/tags/golang-proxy/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hicker-kin.github.io/tags/golang-proxy/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>chinese</title>
       <link>https://hicker-kin.github.io/tags/chinese/</link>
