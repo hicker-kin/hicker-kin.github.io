@@ -49,15 +49,6 @@ package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;net/h
     </item>
     
     <item>
-      <title>中文测试</title>
-      <link>https://hicker-kin.github.io/post/chinese-test/</link>
-      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://hicker-kin.github.io/post/chinese-test/</guid>
-      <description>&lt;p&gt;This is a chinese test post to show you how chinese is displayed.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>日本語テスト</title>
       <link>https://hicker-kin.github.io/post/japanese-test/</link>
       <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
