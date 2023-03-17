@@ -5,7 +5,13 @@
     <loc>https://hicker-kin.github.io/categories/</loc>
     <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://hicker-kin.github.io/post/defer/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hicker-kin.github.io/categories/golang/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hicker-kin.github.io/tags/golang-defer/</loc>
     <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hicker-kin.github.io/tags/golang-queue/</loc>
@@ -15,6 +21,9 @@
     <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hicker-kin.github.io/post/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hicker-kin.github.io/categories/server/</loc>
     <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hicker-kin.github.io/categories/server-queue/</loc>

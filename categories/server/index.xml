@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>server on hicker-kin blog</title>
+    <link>https://hicker-kin.github.io/categories/server/</link>
+    <description>Recent content in server on hicker-kin blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hicker-kin.github.io/categories/server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>defer VS return</title>
+      <link>https://hicker-kin.github.io/post/defer/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hicker-kin.github.io/post/defer/</guid>
+      <description>defer和return到底谁先执行：
+package test import ( &amp;#34;fmt&amp;#34; &amp;#34;testing&amp;#34; ) /** 如果函数的返回值是无名的，那么go语言会在执行return的时候先创建一个临时变量来保存return值， 然后再执行defer函数，最后返回临时变量。 如果函数的返回值是有名的，那么go语言会在执行return的时候先把返回值赋给有名变量，然后再执行defer函数， 最后返回有名变量。这样defer函数就可以修改有名变量的值。 */ func TestDefer(t *testing.T) { a := 1 t.Log(fn1(&amp;amp;a)) b := 2 t.Log(fn2(&amp;amp;b)) } func fn1(i *int) int { defer func() { *i += 3 fmt.Println(&amp;#34;run defer after return when back variable is anonymous&amp;#34;) }() return *i } func fn2(i *int) (resp int) { defer func() { resp = *i + 3 fmt.Println(&amp;#34;run defer before return when back variable is anonymous&amp;#34;) }() return resp } // 测试结果 === RUN TestDefer run defer after return when back variable is anonymous defer_test.</description>
+    </item>
+    
+  </channel>
+</rss>
