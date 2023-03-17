@@ -316,10 +316,7 @@
     </div>
     <div class="postShorten-excerpt">
       
-        本文是使用httputils库做的反向代理，代码实现如下:
-用法:
-1、本地运行main 2、访问http://127.0.0.1:8080即可打开百度
-package main import ( &#34;fmt&#34; &#34;log&#34; &#34;net/http&#34; &#34;net/http/httputil&#34; &#34;net/url&#34; ) func ReverseProxyHandler(w http.ResponseWriter, r *http.Request) { fmt.Println(&#34;receive a request from:&#34;, r.RemoteAddr, r.Header) remote, err := url.Parse(&#34;https://www.baidu.com&#34;) if err != nil { panic(err) } reverseProxy := httputil.NewSingleHostReverseProxy(remote) director := func(req *http.Request) { req.URL.Scheme = remote.Scheme req.URL.Host = remote.Host req.Host = remote.Host } reverseProxy.Director = director reverseProxy.ServeHTTP(w, r) } func main() { fmt.Printf(&#34;Starting server at port 8080\n&#34;) if err := http.
+        <p>本文是使用httputils库做的反向代理，代码实现如下:</p>
       
       <p>
         

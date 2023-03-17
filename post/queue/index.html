@@ -16,7 +16,7 @@
     
   },
   "name":"hicker-kin blog",
-  "description":"本文主要实现自定义的几种队列，代码实现如下：\n使用golang的list 使用list自带的PushBack(),PushFront()等特性实现enqueue\npackage main import ( \u0026#34;container\/list\u0026#34; \u0026#34;fmt\u0026#34; \u0026#34;testing\u0026#34; ) func TestList(_ *testing.T) { l := list.New() l.PushFront(\u0026#34;10\u0026#34;) l.PushFront(\u0026#34;20\u0026#34;) l.PushBack(\u0026#34;40\u0026#34;) l.PushBack(\u0026#34;50\u0026#34;) \/\/ 20 10 40 50 fmt.Println(\u0026#34;len -- \u0026#34;, l.Len()) front := l.Front() \/\/ 20 fmt.Println(front.Value) for e := l.Front(); e != nil; e = e.Next() { fmt.Printf(\u0026#34;%T %v \\t\u0026#34;, e.Value, e.Value) \/\/ string 20 string 10 string 40 string 50 } } func TestList2(_ *testing.T) { customQueue := \u0026amp;customQueue{ queue: list.",
+  "description":"\u003cp\u003e本文主要实现自定义的几种队列，代码实现如下：\u003c\/p\u003e",
   "url":"https:\/\/hicker-kin.github.io\/post\/queue\/",
   "keywords":"[]"
 }
@@ -28,26 +28,18 @@
 <meta name="generator" content="Hugo 0.101.0 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="Qinzj">
 <meta name="keywords" content="">
-<meta name="description" content="本文主要实现自定义的几种队列，代码实现如下：
-使用golang的list 使用list自带的PushBack(),PushFront()等特性实现enqueue
-package main import ( &#34;container/list&#34; &#34;fmt&#34; &#34;testing&#34; ) func TestList(_ *testing.T) { l := list.New() l.PushFront(&#34;10&#34;) l.PushFront(&#34;20&#34;) l.PushBack(&#34;40&#34;) l.PushBack(&#34;50&#34;) // 20 10 40 50 fmt.Println(&#34;len -- &#34;, l.Len()) front := l.Front() // 20 fmt.Println(front.Value) for e := l.Front(); e != nil; e = e.Next() { fmt.Printf(&#34;%T %v \t&#34;, e.Value, e.Value) // string 20 string 10 string 40 string 50 } } func TestList2(_ *testing.T) { customQueue := &amp;customQueue{ queue: list.">
+<meta name="description" content="本文主要实现自定义的几种队列，代码实现如下：">
 
 
-<meta property="og:description" content="本文主要实现自定义的几种队列，代码实现如下：
-使用golang的list 使用list自带的PushBack(),PushFront()等特性实现enqueue
-package main import ( &#34;container/list&#34; &#34;fmt&#34; &#34;testing&#34; ) func TestList(_ *testing.T) { l := list.New() l.PushFront(&#34;10&#34;) l.PushFront(&#34;20&#34;) l.PushBack(&#34;40&#34;) l.PushBack(&#34;50&#34;) // 20 10 40 50 fmt.Println(&#34;len -- &#34;, l.Len()) front := l.Front() // 20 fmt.Println(front.Value) for e := l.Front(); e != nil; e = e.Next() { fmt.Printf(&#34;%T %v \t&#34;, e.Value, e.Value) // string 20 string 10 string 40 string 50 } } func TestList2(_ *testing.T) { customQueue := &amp;customQueue{ queue: list.">
+<meta property="og:description" content="本文主要实现自定义的几种队列，代码实现如下：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="队列实现">
 <meta name="twitter:title" content="队列实现">
 <meta property="og:url" content="https://hicker-kin.github.io/post/queue/">
 <meta property="twitter:url" content="https://hicker-kin.github.io/post/queue/">
 <meta property="og:site_name" content="hicker-kin blog">
-<meta property="og:description" content="本文主要实现自定义的几种队列，代码实现如下：
-使用golang的list 使用list自带的PushBack(),PushFront()等特性实现enqueue
-package main import ( &#34;container/list&#34; &#34;fmt&#34; &#34;testing&#34; ) func TestList(_ *testing.T) { l := list.New() l.PushFront(&#34;10&#34;) l.PushFront(&#34;20&#34;) l.PushBack(&#34;40&#34;) l.PushBack(&#34;50&#34;) // 20 10 40 50 fmt.Println(&#34;len -- &#34;, l.Len()) front := l.Front() // 20 fmt.Println(front.Value) for e := l.Front(); e != nil; e = e.Next() { fmt.Printf(&#34;%T %v \t&#34;, e.Value, e.Value) // string 20 string 10 string 40 string 50 } } func TestList2(_ *testing.T) { customQueue := &amp;customQueue{ queue: list.">
-<meta name="twitter:description" content="本文主要实现自定义的几种队列，代码实现如下：
-使用golang的list 使用list自带的PushBack(),PushFront()等特性实现enqueue
-package main import ( &#34;container/list&#34; &#34;fmt&#34; &#34;testing&#34; ) func TestList(_ *testing.T) { l := list.New() l.PushFront(&#34;10&#34;) l.PushFront(&#34;20&#34;) l.PushBack(&#34;40&#34;) l.PushBack(&#34;50&#34;) // 20 10 40 50 fmt.Println(&#34;len -- &#34;, l.Len()) front := l.Front() // 20 fmt.Println(front.Value) for e := l.Front(); e != nil; e = e.Next() { fmt.Printf(&#34;%T %v \t&#34;, e.Value, e.Value) // string 20 string 10 string 40 string 50 } } func TestList2(_ *testing.T) { customQueue := &amp;customQueue{ queue: list.">
+<meta property="og:description" content="本文主要实现自定义的几种队列，代码实现如下：">
+<meta name="twitter:description" content="本文主要实现自定义的几种队列，代码实现如下：">
 <meta property="og:locale" content="en-us">
 
   
@@ -496,7 +488,6 @@ package main import ( &#34;container/list&#34; &#34;fmt&#34; &#34;testing&#34; )
 </span></span></code></pre></div><blockquote>
 <p>天行健，君子以自强不息</p>
 </blockquote>
-
               
 
 

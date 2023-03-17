@@ -314,9 +314,7 @@
     </div>
     <div class="postShorten-excerpt">
       
-        本文主要实现自定义的几种队列，代码实现如下：
-使用golang的list 使用list自带的PushBack(),PushFront()等特性实现enqueue
-package main import ( &#34;container/list&#34; &#34;fmt&#34; &#34;testing&#34; ) func TestList(_ *testing.T) { l := list.New() l.PushFront(&#34;10&#34;) l.PushFront(&#34;20&#34;) l.PushBack(&#34;40&#34;) l.PushBack(&#34;50&#34;) // 20 10 40 50 fmt.Println(&#34;len -- &#34;, l.Len()) front := l.Front() // 20 fmt.Println(front.Value) for e := l.Front(); e != nil; e = e.Next() { fmt.Printf(&#34;%T %v \t&#34;, e.Value, e.Value) // string 20 string 10 string 40 string 50 } } func TestList2(_ *testing.T) { customQueue := &amp;customQueue{ queue: list.
+        <p>本文主要实现自定义的几种队列，代码实现如下：</p>
       
       <p>
         
@@ -444,10 +442,7 @@ package main import ( &#34;container/list&#34; &#34;fmt&#34; &#34;testing&#34; )
     </div>
     <div class="postShorten-excerpt">
       
-        本文是使用httputils库做的反向代理，代码实现如下:
-用法:
-1、本地运行main 2、访问http://127.0.0.1:8080即可打开百度
-package main import ( &#34;fmt&#34; &#34;log&#34; &#34;net/http&#34; &#34;net/http/httputil&#34; &#34;net/url&#34; ) func ReverseProxyHandler(w http.ResponseWriter, r *http.Request) { fmt.Println(&#34;receive a request from:&#34;, r.RemoteAddr, r.Header) remote, err := url.Parse(&#34;https://www.baidu.com&#34;) if err != nil { panic(err) } reverseProxy := httputil.NewSingleHostReverseProxy(remote) director := func(req *http.Request) { req.URL.Scheme = remote.Scheme req.URL.Host = remote.Host req.Host = remote.Host } reverseProxy.Director = director reverseProxy.ServeHTTP(w, r) } func main() { fmt.Printf(&#34;Starting server at port 8080\n&#34;) if err := http.
+        <p>本文是使用httputils库做的反向代理，代码实现如下:</p>
       
       <p>
         

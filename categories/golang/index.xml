@@ -22,9 +22,7 @@
       <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://hicker-kin.github.io/post/queue/</guid>
-      <description>本文主要实现自定义的几种队列，代码实现如下：
-使用golang的list 使用list自带的PushBack(),PushFront()等特性实现enqueue
-package main import ( &amp;#34;container/list&amp;#34; &amp;#34;fmt&amp;#34; &amp;#34;testing&amp;#34; ) func TestList(_ *testing.T) { l := list.New() l.PushFront(&amp;#34;10&amp;#34;) l.PushFront(&amp;#34;20&amp;#34;) l.PushBack(&amp;#34;40&amp;#34;) l.PushBack(&amp;#34;50&amp;#34;) // 20 10 40 50 fmt.Println(&amp;#34;len -- &amp;#34;, l.Len()) front := l.Front() // 20 fmt.Println(front.Value) for e := l.Front(); e != nil; e = e.Next() { fmt.Printf(&amp;#34;%T %v \t&amp;#34;, e.Value, e.Value) // string 20 string 10 string 40 string 50 } } func TestList2(_ *testing.T) { customQueue := &amp;amp;customQueue{ queue: list.</description>
+      <description>&lt;p&gt;本文主要实现自定义的几种队列，代码实现如下：&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,10 +40,7 @@ package main import ( &amp;#34;container/list&amp;#34; &amp;#34;fmt&amp;#34; &am
       <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://hicker-kin.github.io/post/http-proxy/</guid>
-      <description>本文是使用httputils库做的反向代理，代码实现如下:
-用法:
-1、本地运行main 2、访问http://127.0.0.1:8080即可打开百度
-package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;net/http/httputil&amp;#34; &amp;#34;net/url&amp;#34; ) func ReverseProxyHandler(w http.ResponseWriter, r *http.Request) { fmt.Println(&amp;#34;receive a request from:&amp;#34;, r.RemoteAddr, r.Header) remote, err := url.Parse(&amp;#34;https://www.baidu.com&amp;#34;) if err != nil { panic(err) } reverseProxy := httputil.NewSingleHostReverseProxy(remote) director := func(req *http.Request) { req.URL.Scheme = remote.Scheme req.URL.Host = remote.Host req.Host = remote.Host } reverseProxy.Director = director reverseProxy.ServeHTTP(w, r) } func main() { fmt.Printf(&amp;#34;Starting server at port 8080\n&amp;#34;) if err := http.</description>
+      <description>&lt;p&gt;本文是使用httputils库做的反向代理，代码实现如下:&lt;/p&gt;</description>
     </item>
     
   </channel>
