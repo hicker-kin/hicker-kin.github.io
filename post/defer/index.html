@@ -16,7 +16,7 @@
     
   },
   "name":"hicker-kin blog",
-  "description":"defer和return到底谁先执行：\npackage test import ( \u0026#34;fmt\u0026#34; \u0026#34;testing\u0026#34; ) \/** 如果函数的返回值是无名的，那么go语言会在执行return的时候先创建一个临时变量来保存return值， 然后再执行defer函数，最后返回临时变量。 如果函数的返回值是有名的，那么go语言会在执行return的时候先把返回值赋给有名变量，然后再执行defer函数， 最后返回有名变量。这样defer函数就可以修改有名变量的值。 *\/ func TestDefer(t *testing.T) { a := 1 t.Log(fn1(\u0026amp;a)) b := 2 t.Log(fn2(\u0026amp;b)) } func fn1(i *int) int { defer func() { *i \u002b= 3 fmt.Println(\u0026#34;run defer after return when back variable is anonymous\u0026#34;) }() return *i } func fn2(i *int) (resp int) { defer func() { resp = *i \u002b 3 fmt.Println(\u0026#34;run defer before return when back variable is anonymous\u0026#34;) }() return resp } \/\/ 测试结果 === RUN TestDefer run defer after return when back variable is anonymous defer_test.",
+  "description":"\u003cp\u003edefer和return到底谁先执行：\u003c\/p\u003e",
   "url":"https:\/\/hicker-kin.github.io\/post\/defer\/",
   "keywords":"[]"
 }
@@ -28,22 +28,18 @@
 <meta name="generator" content="Hugo 0.101.0 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="Qinzj">
 <meta name="keywords" content="">
-<meta name="description" content="defer和return到底谁先执行：
-package test import ( &#34;fmt&#34; &#34;testing&#34; ) /** 如果函数的返回值是无名的，那么go语言会在执行return的时候先创建一个临时变量来保存return值， 然后再执行defer函数，最后返回临时变量。 如果函数的返回值是有名的，那么go语言会在执行return的时候先把返回值赋给有名变量，然后再执行defer函数， 最后返回有名变量。这样defer函数就可以修改有名变量的值。 */ func TestDefer(t *testing.T) { a := 1 t.Log(fn1(&amp;a)) b := 2 t.Log(fn2(&amp;b)) } func fn1(i *int) int { defer func() { *i &#43;= 3 fmt.Println(&#34;run defer after return when back variable is anonymous&#34;) }() return *i } func fn2(i *int) (resp int) { defer func() { resp = *i &#43; 3 fmt.Println(&#34;run defer before return when back variable is anonymous&#34;) }() return resp } // 测试结果 === RUN TestDefer run defer after return when back variable is anonymous defer_test.">
+<meta name="description" content="defer和return到底谁先执行：">
 
 
-<meta property="og:description" content="defer和return到底谁先执行：
-package test import ( &#34;fmt&#34; &#34;testing&#34; ) /** 如果函数的返回值是无名的，那么go语言会在执行return的时候先创建一个临时变量来保存return值， 然后再执行defer函数，最后返回临时变量。 如果函数的返回值是有名的，那么go语言会在执行return的时候先把返回值赋给有名变量，然后再执行defer函数， 最后返回有名变量。这样defer函数就可以修改有名变量的值。 */ func TestDefer(t *testing.T) { a := 1 t.Log(fn1(&amp;a)) b := 2 t.Log(fn2(&amp;b)) } func fn1(i *int) int { defer func() { *i &#43;= 3 fmt.Println(&#34;run defer after return when back variable is anonymous&#34;) }() return *i } func fn2(i *int) (resp int) { defer func() { resp = *i &#43; 3 fmt.Println(&#34;run defer before return when back variable is anonymous&#34;) }() return resp } // 测试结果 === RUN TestDefer run defer after return when back variable is anonymous defer_test.">
+<meta property="og:description" content="defer和return到底谁先执行：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="defer VS return">
 <meta name="twitter:title" content="defer VS return">
 <meta property="og:url" content="https://hicker-kin.github.io/post/defer/">
 <meta property="twitter:url" content="https://hicker-kin.github.io/post/defer/">
 <meta property="og:site_name" content="hicker-kin blog">
-<meta property="og:description" content="defer和return到底谁先执行：
-package test import ( &#34;fmt&#34; &#34;testing&#34; ) /** 如果函数的返回值是无名的，那么go语言会在执行return的时候先创建一个临时变量来保存return值， 然后再执行defer函数，最后返回临时变量。 如果函数的返回值是有名的，那么go语言会在执行return的时候先把返回值赋给有名变量，然后再执行defer函数， 最后返回有名变量。这样defer函数就可以修改有名变量的值。 */ func TestDefer(t *testing.T) { a := 1 t.Log(fn1(&amp;a)) b := 2 t.Log(fn2(&amp;b)) } func fn1(i *int) int { defer func() { *i &#43;= 3 fmt.Println(&#34;run defer after return when back variable is anonymous&#34;) }() return *i } func fn2(i *int) (resp int) { defer func() { resp = *i &#43; 3 fmt.Println(&#34;run defer before return when back variable is anonymous&#34;) }() return resp } // 测试结果 === RUN TestDefer run defer after return when back variable is anonymous defer_test.">
-<meta name="twitter:description" content="defer和return到底谁先执行：
-package test import ( &#34;fmt&#34; &#34;testing&#34; ) /** 如果函数的返回值是无名的，那么go语言会在执行return的时候先创建一个临时变量来保存return值， 然后再执行defer函数，最后返回临时变量。 如果函数的返回值是有名的，那么go语言会在执行return的时候先把返回值赋给有名变量，然后再执行defer函数， 最后返回有名变量。这样defer函数就可以修改有名变量的值。 */ func TestDefer(t *testing.T) { a := 1 t.Log(fn1(&amp;a)) b := 2 t.Log(fn2(&amp;b)) } func fn1(i *int) int { defer func() { *i &#43;= 3 fmt.Println(&#34;run defer after return when back variable is anonymous&#34;) }() return *i } func fn2(i *int) (resp int) { defer func() { resp = *i &#43; 3 fmt.Println(&#34;run defer before return when back variable is anonymous&#34;) }() return resp } // 测试结果 === RUN TestDefer run defer after return when back variable is anonymous defer_test.">
+<meta property="og:description" content="defer和return到底谁先执行：">
+<meta name="twitter:description" content="defer和return到底谁先执行：">
 <meta property="og:locale" content="en-us">
 
   
@@ -312,7 +308,6 @@ package test import ( &#34;fmt&#34; &#34;testing&#34; ) /** 如果函数的返�
 </span></span></code></pre></div><blockquote>
 <p>天行健，君子以自强不息</p>
 </blockquote>
-
               
 
 
