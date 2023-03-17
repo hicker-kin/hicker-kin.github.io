@@ -3,7 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hicker-kin.github.io/categories/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hicker-kin.github.io/categories/golang/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hicker-kin.github.io/tags/golang-queue/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hicker-kin.github.io/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hicker-kin.github.io/post/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hicker-kin.github.io/categories/server-queue/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hicker-kin.github.io/tags/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hicker-kin.github.io/post/queue/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hicker-kin.github.io/post/gin-proxy/</loc>
     <lastmod>2023-03-02T00:00:00+00:00</lastmod>
@@ -11,22 +32,10 @@
     <loc>https://hicker-kin.github.io/post/http-proxy/</loc>
     <lastmod>2023-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hicker-kin.github.io/categories/golang/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hicker-kin.github.io/tags/golang-proxy/</loc>
     <lastmod>2023-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hicker-kin.github.io/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hicker-kin.github.io/post/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hicker-kin.github.io/categories/server-proxy/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hicker-kin.github.io/tags/</loc>
     <lastmod>2023-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hicker-kin.github.io/categories/blog/</loc>
