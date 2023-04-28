@@ -6,7 +6,26 @@
     <description>Recent content in Posts on hicker-kin blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hicker-kin.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hicker-kin.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>golang cache</title>
+      <link>https://hicker-kin.github.io/post/api-cache/</link>
+      <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hicker-kin.github.io/post/api-cache/</guid>
+      <description>&lt;p&gt;对于请求量频繁、更新频率不高的热点数据，&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>golang stack</title>
+      <link>https://hicker-kin.github.io/post/stack/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hicker-kin.github.io/post/stack/</guid>
+      <description>实现一个简单的栈:
+package main import ( &amp;#34;fmt&amp;#34; &amp;#34;testing&amp;#34; ) type Stack []int func (s *Stack) Push(val int) { *s = append(*s, val) } func (s *Stack) Pop() int { if len(*s) == 0 { return -1 } val := (*s)[len(*s)-1] *s = (*s)[:len(*s)-1] return val } func (s *Stack) Peek() int { if len(*s) == 0 { return -1 } return (*s)[len(*s)-1] } func (s *Stack) IsEmpty() bool { return len(*s) == 0 } func TestStack(t *testing.</description>
+    </item>
+    
     <item>
       <title>defer VS return</title>
       <link>https://hicker-kin.github.io/post/defer/</link>
