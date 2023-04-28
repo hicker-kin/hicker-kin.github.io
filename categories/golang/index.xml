@@ -22,8 +22,7 @@
       <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://hicker-kin.github.io/post/stack/</guid>
-      <description>实现一个简单的栈:
-package main import ( &amp;#34;fmt&amp;#34; &amp;#34;testing&amp;#34; ) type Stack []int func (s *Stack) Push(val int) { *s = append(*s, val) } func (s *Stack) Pop() int { if len(*s) == 0 { return -1 } val := (*s)[len(*s)-1] *s = (*s)[:len(*s)-1] return val } func (s *Stack) Peek() int { if len(*s) == 0 { return -1 } return (*s)[len(*s)-1] } func (s *Stack) IsEmpty() bool { return len(*s) == 0 } func TestStack(t *testing.</description>
+      <description>&lt;p&gt;实现一个简单的栈:&lt;/p&gt;</description>
     </item>
     
     <item>
